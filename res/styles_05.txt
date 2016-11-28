@@ -1,0 +1,20 @@
+Ale
+- Pale Ale
+- Ale - Other
+- Belgian Ale
+
+Strong Ale
+- IPA
+- Strong Ale
+
+Dark
+- Dark Ale
+- Stout
+
+Lager
+- Lager
+- German Lager
+
+Other
+- Sour
+- Other

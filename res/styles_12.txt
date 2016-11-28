@@ -1,0 +1,127 @@
+IPA
+- American IPA
+- American Double / Imperial IPA
+- English India Pale Ale (IPA)
+- Belgian IPA
+- American White IPA
+
+Pale Ale
+- American Pale Ale (APA)
+- Belgian Pale Ale
+- American Pilsner
+- Wheat Ale
+- American Pale Wheat Ale
+- American Blonde Ale
+*- Irish Red Ale
+- English Pale Mild Ale
+- English Pale Ale
+*- Shandy
+
+Dark Ale
+- English Brown Ale
+- American Amber / Red Ale
+- American Brown Ale
+- American Black Ale
+- English Dark Mild Ale
+- Winter Warmer
+- American Dark Wheat Ale
+- Flanders Red Ale
+
+Strong Ale
+- Old Ale
+- Scotch Ale / Wee Heavy
+- American Strong Ale
+- English Strong Ale
+- Scottish Ale
+- American Double / Imperial Pilsner
+- English Barleywine
+- American Barleywine
+
+Ale - other
+- Pumpkin Ale
+- Cream Ale
+*- Saison / Farmhouse Ale
+*- American Wild Ale
+- Fruit / Vegetable Beer
+*- Bière de Garde
+*- Roggenbier
+
+Porter
+- Baltic Porter
+
+Other
+*- Rye Beer
+- Rauchbier
+*- Radler
+*- Herbed / Spiced Beer
+- Other
+- Chile Beer
+- Smoked Beer
+- Grisette
+
+Nonbeer
+- American Malt Liquor
+- Cider
+- Mead
+- Low Alcohol Beer
+- Braggot
+
+Lager
+- American Pale Lager
+*- American India Pale Lager
+- California Common / Steam Beer
+- American Amber / Red Lager
+- Euro Pale Lager
+- American Adjunct Lager
+- Light Lager
+- Vienna Lager
+- Euro Dark Lager
+
+Stout
+- Milk / Sweet Stout
+- American Double / Imperial Stout
+- Russian Imperial Stout
+- American Stout
+- Oatmeal Stout
+- English Stout
+- Foreign / Export Stout
+- Irish Dry Stout
+
+Sour
+- Extra Special / Strong Bitter
+- Gose
+- English Bitter
+- Flanders Oud Bruin
+- Fruit / Vegetable Beer
+
+German Lager
+- German Pilsener
+- Keller Bier / Zwickel Bier
+- Doppelbock
+- Munich Helles Lager
+- Märzen / Oktoberfest
+- Maibock / Helles Bock
+- Bock
+- Schwarzbier
+- Dortmunder / Export Lager
+- Munich Dunkel Lager
+
+German Ale
+- Altbier
+- Dunkelweizen
+- Kölsch
+*- Kristalweizen
+*- Czech Pilsener
+*- Berliner Weissbier
+*- Hefeweizen
+
+Belgian Ale
+- Belgian Pale Ale
+- Tripel
+- Dubbel
+- Quadrupel (Quad)
+- Witbier
+- Abbey Single Ale
+*- Belgian Strong Pale Ale
+*- Belgian Dark Ale
+*- Belgian Strong Dark Ale

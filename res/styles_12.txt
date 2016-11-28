@@ -15,7 +15,7 @@ Pale Ale
 *- Irish Red Ale
 - English Pale Mild Ale
 - English Pale Ale
-*- Shandy
+- Cream Ale
 
 Dark Ale
 - English Brown Ale
@@ -39,15 +39,12 @@ Strong Ale
 
 Ale - other
 - Pumpkin Ale
-- Cream Ale
 *- Saison / Farmhouse Ale
 *- American Wild Ale
 - Fruit / Vegetable Beer
 *- Bière de Garde
 *- Roggenbier
-
-Porter
-- Baltic Porter
+*- Shandy
 
 Other
 *- Rye Beer
@@ -77,7 +74,7 @@ Lager
 - Vienna Lager
 - Euro Dark Lager
 
-Stout
+Stout / Porter
 - Milk / Sweet Stout
 - American Double / Imperial Stout
 - Russian Imperial Stout
@@ -86,6 +83,7 @@ Stout
 - English Stout
 - Foreign / Export Stout
 - Irish Dry Stout
+- Baltic Porter
 
 Sour
 - Extra Special / Strong Bitter

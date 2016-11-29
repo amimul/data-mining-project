@@ -33,7 +33,7 @@ ls_all_states = ls_northeast + ls_midwest + ls_south + ls_west
 
 def get_state(citystate):
     """return two character state code from 'city, NY' string"""
-    stateCode =  citystate.split(", ", 1)[1]
+    stateCode = (citystate.replace(u'\xa0', ' ')).split(",", 1)[1].lstrip()
     return None if stateCode not in ls_all_states else stateCode
 
 

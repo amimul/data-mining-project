@@ -61,7 +61,7 @@ ale_wild        = "American Wild Ale"
 ale_garde       = "Bière de Garde"
 ale_roggenbier  = "Roggenbier"
 ale_shandy      = "Shandy"
-ale_ls = [ale_pumpkin, ale_saison, ale_wild, ale_fruit, ale_garde, ale_roggenbier, ale_shandy]
+ale_ls = [ale_pumpkin, ale_saison, ale_wild, ale_garde, ale_roggenbier, ale_shandy]
 
 # other
 etc = "Other"

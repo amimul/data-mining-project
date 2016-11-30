@@ -7,12 +7,20 @@
 
 # import csv, sys, and beer libraries
 import csv, sys
+
+import styles
 from beer import Beer, getHeader
 
 # list of beers
 lsBeers = []
+
+# metrics used in filters and normalizations
 max_ibu = 99999  # practically infinite
 max_abv = 0
+num_ipa = 0
+lsIPA  = styles.ipa_ls
+num_pale = 0
+lsPale  = styles.pale_ls
 
 # index for each attribute value
 NAME     = 1
@@ -66,6 +74,8 @@ def ingest(filename):
 
 def export(filename):
     """write data from the `lsBeers` list"""
+    global lsPale, lsIPA, num_ipa, num_pale
+
     with open(filename, "w") as csv_out:
         beer_data_out = csv.writer(csv_out)
         beer_data_out.writerow(getHeader())
@@ -76,10 +86,8 @@ def export(filename):
         for beer in lsBeers:
             num_total += 1
 
-            print(beer.getData())
-
             # only include beers with all information
-            if None in beer.getData(): #beer.style12 is None or beer.style05 is None or beer.size is None or beer.abv is None or beer.ibu is None:
+            if matchFilters(beer):
                 pass
             else:
 
@@ -90,16 +98,73 @@ def export(filename):
                 if beer.ibu is not None:
                     max_ibu = beer.ibu if beer.ibu > max_ibu else max_ibu
 
+                # update count of pale and ipa beers
+                if beer.style12 == styles.pale:
+                    num_pale += 1
+
+                if beer.style12 == styles.ipa:
+                    num_ipa += 1
+
+                print("num pale: " + str(num_pale) + " | num ipa: " + str(num_ipa))
+
+                # add known beer to list to normalize and write out
                 toNormalize.append(beer)
                 num_left += 1
 
+        # export the selected, normalized, known beers
         for beer in toNormalize:
             normalizeMetrics(beer)
             beer_data_out.writerow(beer.getData())
 
         discard = num_total - num_left
         print("total: " + str(num_total) + " | left: " + str(num_left))
-        print("discarded: " + str(discard) + " | " + str((discard*1.0)/num_total) + "%")
+        print("discarded: " + str(discard) + " | " + str((discard*100.0)/num_total) + "%")
+
+
+# - beer filters - #
+
+def matchFilters(beer):
+    """dynamic function meant to handle which filters are currently being used"""
+    lsFilters = [matchFilterBeerIPACap(beer), matchFilterBeerPaleCap(beer),
+                 matchFilterEmptyValues(beer), matchFilterStyleOther(beer)]
+    return True in lsFilters
+
+
+def matchFilterStylesMetrics(beer):
+    """filter out values with 'None' in the style12,05, abv, or ibu fields"""
+    return beer.style12 is None or beer.style05 is None or beer.abv is None or beer.ibu is None
+
+
+def matchFilterEmptyValues(beer):
+    """filter out any value with an empty field"""
+    return None in beer.getData()
+
+
+def matchFilterBeerIPACap(beer):
+    """ensure the number of IPAs added to the data set is under 100"""
+    global num_ipa, lsIPA
+    return (beer.style12 in lsIPA) and num_ipa >=100
+
+
+def matchFilterBeerPaleCap(beer):
+    """ensure the number of Pale Ales added to the data set is under 100"""
+    global num_pale, lsPale
+    return (beer.style12 in lsPale) and num_pale >=100
+
+
+def matchFilterStyleOther(beer):
+    """catch beers in the 'other' category"""
+    return beer.style12 is None or beer.style12 in styles.etc_ls
+
+
+def matchFilterStyleAleOther(beer):
+    """catch beers in the 'ale - other' category"""
+    return beer.style12 in styles.ale_ls
+
+
+def matchFilterStyleSour(beer):
+    """catch beers in the 'sour' category """
+    return beer.style12 in styles.sour_ls
 
 
 # - helpers - #
@@ -107,7 +172,7 @@ def export(filename):
 def normalizeMetrics(beer):
     """normalize beer metrics to float [0,1]"""
     beer.abv_norm = (beer.abv * 1.0) / max_abv if beer.abv is not None else None
-    #beer.ibu_norm = ((1+beer.ibu) * 1.0) / (1+max_ibu) if beer.ibu is not None else None
+    # beer.ibu_norm = ((1+beer.ibu) * 1.0) / (1+max_ibu) if beer.ibu is not None else None
 
 
 if __name__ == "__main__":

@@ -61,4 +61,5 @@ def cleanABV(abv):
 
 def cleanAlphaNumeric(str):
     """remove non-alphanumeric characters to sanitize export file"""
-    return re.sub(r'[^a-zA-Z0-9\s]', '', str)
+    txt_clean = re.sub(r'[^a-zA-Z0-9\s]', '', str)
+    return txt_clean if txt_clean != "" else None

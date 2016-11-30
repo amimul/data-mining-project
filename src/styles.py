@@ -7,7 +7,7 @@
 # ipa
 ipa = "IPA"
 ipa_american      = "American IPA"
-ipa_american_dipa = "American Double / Imperial IPA"
+ipa_american_dipa = "American Double - Imperial IPA"
 ipa_english_ipa   = "English India Pale Ale (IPA)"
 ipa_belgian       = "Belgian IPA"
 ipa_american_white= "American White IPA"
@@ -30,7 +30,7 @@ pale_ls = [pale_american, pale_belgian, pale_american_pils, pale_wheat, pale_ame
 # dark
 dark = "Dark Ale"
 dark_english_brown  = "English Brown Ale"
-dark_american_amber = "American Amber / Red Ale"
+dark_american_amber = "American Amber - Red Ale"
 dark_american_brown = "American Brown Ale"
 dark_american_black = "American Black Ale"
 dark_english_mild   = "English Dark Mild Ale"
@@ -43,11 +43,11 @@ dark_ls = [dark_english_brown, dark_american_amber, dark_american_brown, dark_am
 # strong
 strong = "Strong Ale"
 strong_old            = "Old Ale"
-strong_scotch         = "Scotch Ale / Wee Heavy"
+strong_scotch         = "Scotch Ale - Wee Heavy"
 strong_american       = "American Strong Ale"
 strong_english        = "English Strong Ale"
 strong_scottish       = "Scottish Ale"
-strong_american_pils  = "American Double / Imperial Pilsner"
+strong_american_pils  = "American Double - Imperial Pilsner"
 strong_english_barley = "English Barleywine"
 strong_american_barley= "American Barleywine"
 strong_ls = [strong_old, strong_scotch, strong_american, strong_english, strong_scottish, strong_american_pils,
@@ -56,7 +56,7 @@ strong_ls = [strong_old, strong_scotch, strong_american, strong_english, strong_
 # ale - other
 ale = "Ale - Other"
 ale_pumpkin     = "Pumpkin Ale"
-ale_saison      = "Saison / Farmhouse Ale"
+ale_saison      = "Saison - Farmhouse Ale"
 ale_wild        = "American Wild Ale"
 ale_garde       = "Bière de Garde"
 ale_roggenbier  = "Roggenbier"
@@ -68,7 +68,7 @@ etc = "Other"
 etc_rye         = "Rye Beer"
 etc_rauchbier   = "Rauchbier"
 etc_radler      = "Radler"
-etc_spiced      = "Herbed / Spiced Beer"
+etc_spiced      = "Herbed - Spiced Beer"
 etc_other       = "Other"
 etc_chile       = "Chile Beer"
 etc_smoked      = "Smoked Beer"
@@ -79,8 +79,8 @@ etc_ls = [etc_rye, etc_rauchbier, etc_radler, etc_spiced, etc_other, etc_chile, 
 lager = "Lager"
 lager_american_pale     = "American Pale Lager"
 lager_american_ipl      = "American India Pale Lager"
-lager_steam             = "California Common / Steam Beer"
-lager_american_red      = "American Amber / Red Lager"
+lager_steam             = "California Common - Steam Beer"
+lager_american_red      = "American Amber - Red Lager"
 lager_euro              = "Euro Pale Lager"
 lager_american_adjunct  = "American Adjunct Lager"
 lager_light             = "Light Lager"
@@ -90,14 +90,14 @@ lager_ls = [lager_american_pale, lager_american_ipl, lager_steam, lager_american
             lager_american_adjunct, lager_light, lager_vienna, lager_euro_dark]
 
 # stout porter
-stout = "Stout / Porter"
-stout_milk              = "Milk / Sweet Stout"
-stout_american_imperial = "American Double / Imperial Stout"
+stout = "Stout - Porter"
+stout_milk              = "Milk - Sweet Stout"
+stout_american_imperial = "American Double - Imperial Stout"
 stout_russian_imperial  = "Russian Imperial Stout"
 stout_american          = "American Stout"
 stout_oatmeal           = "Oatmeal Stout"
 stout_english           = "English Stout"
-stout_foreign           = "Foreign / Export Stout"
+stout_foreign           = "Foreign - Export Stout"
 stout_irish_dry         = "Irish Dry Stout"
 stout_porter_baltic     = "Baltic Porter"
 stout_ls = [stout_milk, stout_american_imperial, stout_russian_imperial, stout_american, stout_oatmeal,
@@ -105,24 +105,24 @@ stout_ls = [stout_milk, stout_american_imperial, stout_russian_imperial, stout_a
 
 # sour
 sour = "Sour"
-sour_esb        = "Extra Special / Strong Bitter"
+sour_esb        = "Extra Special - Strong Bitter"
 sour_gose       = "Gose"
 sour_english    = "English Bitter"
 sour_flanders   = "Flanders Oud Bruin"
-sour_fruit      = "Fruit / Vegetable Beer"
+sour_fruit      = "Fruit - Vegetable Beer"
 sour_ls = [sour_esb, sour_gose, sour_english, sour_flanders, sour_fruit]
 
 # german lager
 german_lager = "German Lager"
 german_lager_pils       = "German Pilsener"
-german_lager_keller     = "Keller Bier / Zwickel Bier"
+german_lager_keller     = "Keller Bier - Zwickel Bier"
 german_lager_bock_doppel= "Doppelbock"
 german_lager_helles     = "Munich Helles Lager"
-german_lager_marzen     = "Märzen / Oktoberfest"
-german_lager_bock_helles= "Maibock / Helles Bock"
+german_lager_marzen     = "Märzen - Oktoberfest"
+german_lager_bock_helles= "Maibock - Helles Bock"
 german_lager_bock       = "Bock"
 german_lager_shwarzbier = "Schwarzbier"
-german_lager_dortmunder = "Dortmunder / Export Lager"
+german_lager_dortmunder = "Dortmunder - Export Lager"
 german_lager_dunkel     = "Munich Dunkel Lager"
 german_lager_ls = [german_lager_pils, german_lager_keller, german_lager_bock_doppel, german_lager_helles,
                    german_lager_marzen, german_lager_bock_helles, german_lager_bock, german_lager_shwarzbier,

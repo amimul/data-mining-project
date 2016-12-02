@@ -105,7 +105,7 @@ def export(filename):
                 if beer.style12 == styles.ipa:
                     num_ipa += 1
 
-                print("num pale: " + str(num_pale) + " | num ipa: " + str(num_ipa))
+                #print("num pale: " + str(num_pale) + " | num ipa: " + str(num_ipa))
 
                 # add known beer to list to normalize and write out
                 toNormalize.append(beer)
@@ -125,8 +125,7 @@ def export(filename):
 
 def matchFilters(beer):
     """dynamic function meant to handle which filters are currently being used"""
-    lsFilters = [matchFilterBeerIPACap(beer), matchFilterBeerPaleCap(beer),
-                 matchFilterEmptyValues(beer), matchFilterStyleOther(beer)]
+    lsFilters = [matchFilterEmptyValues(beer), matchFilterNotPaleOrStrong(beer)]
     return True in lsFilters
 
 
@@ -166,6 +165,10 @@ def matchFilterStyleSour(beer):
     """catch beers in the 'sour' category """
     return beer.style12 in styles.sour_ls
 
+
+def matchFilterNotPaleOrStrong(beer):
+    """catch beers not in the 'Ale', 'Strong' """
+    return beer.style05 not in [styles.ALE, styles.STRONG]
 
 # - helpers - #
 

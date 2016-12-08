@@ -20,7 +20,7 @@ A plethora of tools exist extolling its praises and aiding its
 From apps like [RateBeer](http://www.ratebeer.com/) and
   [untappd](https://untappd.com/), to professional reports on the
   health and growth of the craft and homebrewing beer industry by groups such
-  as the [**beer association**](https://www.brewersassociation.org/statistics/national-beer-sales-production-data/)
+  as the [**brewers association**](https://www.brewersassociation.org/statistics/national-beer-sales-production-data/)
   to the more niche studies on the specific components of beer such as the _hop_   
   studies of the [BarthhaasGroup](http://www.barthhaasgroup.com/en/media-library/downloads?medium__downloads=BART+BERICHT+-+MARKET+LEADERS+REPORT&cck=media_center__downloads&boxchecked=0&search=media_center__downloads&task=search),
   and the _barley_ studies of the [**American Malting Barley Association**](http://ambainc.org/content/14/barley-variety-surveys).
@@ -30,7 +30,8 @@ From apps like [RateBeer](http://www.ratebeer.com/) and
   and the open-sourced applications for homebrewing created by friends
   ([**OpenBrews**](https://github.com/OpenBrews/OpenBrews)), the
   podcasts created by strangers ([**The Beer Genome Project**](http://beergeno.me/)), 
-  and even technical white papers [Predictive analysis of beer quality], 
+  and even technical white papers [Predictive analysis of beer quality](https://www.ncbi.nlm.nih.gov/pubmed/24837965), 
+  the striking and explosive growth of 
 
 ## Challenges ##
 
